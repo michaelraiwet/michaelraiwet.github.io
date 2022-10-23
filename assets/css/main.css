@@ -364,13 +364,17 @@ a, a:visited {
 @media (prefers-color-scheme: dark) {
 	html {
 		--accent-color: rgba(72, 34, 182, 1);
-		--accent-color-grey: rgba(161, 137, 224, 0.4);
+		--accent-color-grey: rgba(74, 59, 114, 1);
 		--accent-color-alt: rgba(0, 74, 255, 0.6);
 		
 	}
 	
 	body {
 		background: rgba(16, 8, 42, 1);
+		color: rgba(255, 255, 255, 0.8);
+	}
+	
+	.bio a {
 		color: rgba(255, 255, 255, 0.8);
 	}
 
