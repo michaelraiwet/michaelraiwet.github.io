@@ -293,6 +293,10 @@ a, a:visited {
 		justify-content: space-evenly;
 		width:100%;
 	}
+	
+	.container {
+		padding-bottom:20px;
+	}
 
 }
 
