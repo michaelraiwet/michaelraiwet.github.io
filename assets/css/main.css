@@ -10,23 +10,24 @@ body {
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 	line-height: 1.6rem;
-	font-size:1.0rem;
+	font-size:0.9rem;
 	position: relative;
-	padding-bottom:200px;
+	padding-bottom: 200px;
+	color:rgba(0, 0, 0, 0.8);
 }
 
 .card-container {
-	margin:5.0rem auto;
+	margin:2.0rem auto;
 	max-width:900px;
 }
 
 .container {
 	display: flex;
 	width:100%;
-	height:100px;
+	height:120px;
 	position: absolute; 
 	bottom:0;
-	padding-bottom:80px;
+	margin: 0 0 40px 0;
 }
 
 .header {
@@ -79,9 +80,8 @@ body {
 	-webkit-user-select: none;
 	width:100%;
 	height:50px;
-}
-.social .flex-item {
-	padding-right:1.2rem;
+	margin-bottom:20px;
+	gap: 1.6rem;
 }
 
 .nav-bar::-webkit-scrollbar {
@@ -106,7 +106,7 @@ body {
 	overflow-x: scroll;
 	white-space: nowrap;
 	display: flex;
-	max-width:500px;
+	max-width:800px;
 	width:100%;
 	height:100%;
 	justify-content: space-evenly;
@@ -114,30 +114,59 @@ body {
 	align-items: top;
 }
 
+.byline ul {
+	margin:0;
+	padding:0;	
+}
+
+.byline li {
+	display: inline;
+	word-wrap: break-word;
+	margin-right:0 0.2rem;
+	padding-left:0rem;
+}
+
+.byline li:after {
+	content: '\00a0\2022';
+	margin:0 0.2rem;
+	color: var(--accent-color-grey);
+}
+
+.byline li:last-child:after {
+	 content: '';
+	 margin: 0;
+ }
+
+
 .flex-item {
 	display:flex;
 	justify-content: space-evenly;
 	align-items: center;
 	height:100%;
-	flex-direction: row;
 }
 
 
 .bio i {
 	font-size: 0.9rem;
-	padding: 0.1rem 0.35rem 0 0;
-	
+	padding: 0.06rem 0.35rem 0 0;
+}
 
+.biog {
+	background:lightcoral;
+	display:flex;
+	flex-wrap: wrap;
+;
+}
+
+.biog .flex-item{
+	gap:0;
+	background: lavender;
+	flex-shrink: 0
 }
 
 
 .byline p {
 	margin:0;
-	padding-right: 1.2rem;
-}
-
-.bio p {
-	padding:10px 0;
 }
 
 
@@ -150,20 +179,23 @@ a, a:visited {
 .bio a {
 	display:flex;
 	align-items: center;
-	background: rgba(86, 42, 217, 0.2);
-	border:2px solid rgba(86, 42, 217, 0.2);
+	background: var(--accent-color-grey);
+	border:2px solid var(--accent-color-grey);
 	border-radius: 20px;
-	padding: 0.3rem 0.7rem 0.3rem 0.7rem;
+	padding: 0.5rem 0.9rem;
 	white-space: nowrap;
 	color: inherit;
-	font-size:0.7rem;
-
+	font-size:0.9rem;
 	height:10px;
+	transition: all 0.3s;
+	color: rgba(0, 0, 0, 0.55);
 }
 
 .bio a:hover {
-	border-color: var(--accent-color); 
+	border-color: var(--accent-color);
+	background: var(--accent-color); 
 	transition: all 0.3s;
+	color:#ffffff;
 }
 
 .social a:hover {
@@ -215,7 +247,7 @@ a, a:visited {
 	color: var(--accent-color-grey);
 	width:100%;
 	align-items: center;
-	height:100%%;
+	height:100%;
 	flex-direction: column;
 	justify-content: space-evenly;
 }
@@ -278,7 +310,7 @@ a, a:visited {
 	}
 	
 	.social {
-		text-align: center;
+		gap:0;
 	}
 	
 	.content-item {
@@ -295,9 +327,21 @@ a, a:visited {
 	}
 	
 	.container {
-		padding-bottom:20px;
+		padding-bottom:0px;
 	}
+	
+	body {
+		padding-bottom: 80px;
+	}
+	
+	
+}
 
+@media only screen and (max-width: 650px) {	
+	.nav-bar {
+		justify-content: flex-start;
+		padding: 0 25px 0 25px;
+	}
 }
 
 @media only screen and (max-width: 450px) {	
@@ -312,6 +356,11 @@ a, a:visited {
 	.nav-bar {
 		justify-content: flex-start;
 		padding: 0 25px 0 25px;
+	}
+	
+	.name {
+		font-size: 1.8rem;
+		line-height: 1.8rem;
 	}
 }
 
