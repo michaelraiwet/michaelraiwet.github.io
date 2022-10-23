@@ -250,19 +250,14 @@ a, a:visited {
 	height:100%;
 	flex-direction: column;
 	justify-content: space-evenly;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
 .footer-item {
 	display:flex;
 	justify-content: space-evenly;
 }
-
-.footer-icons {
-	user-select: none;
-	-webkit-user-select: none;
-}
-
-
 
 
 @media only screen and (max-width: 850px) {	
