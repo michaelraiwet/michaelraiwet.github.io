@@ -1,6 +1,6 @@
 const shareData = {
 	title: 'Michael Raiwet',
-	text: 'My personal website.',
+	text: '',
 	url: 'https://raiwet.ca'
 }
 
