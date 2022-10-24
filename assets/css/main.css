@@ -106,12 +106,13 @@ body {
 	overflow-x: scroll;
 	white-space: nowrap;
 	display: flex;
-	max-width:800px;
+	max-width:900px;
 	width:100%;
 	height:100%;
 	justify-content: space-evenly;
 	gap: 15px;
 	align-items: top;
+	padding: 0 25px 0 25px;
 }
 
 .byline ul {
@@ -175,8 +176,7 @@ a, a:visited {
 	text-decoration: none;
 }
 
-
-.bio a {
+button, .bio a {
 	display:flex;
 	align-items: center;
 	background: var(--accent-color-grey);
@@ -191,7 +191,16 @@ a, a:visited {
 	color: rgba(0, 0, 0, 0.65);
 }
 
-.bio a:hover {
+.bio a {
+	padding: 0.5rem 0.9rem;
+}
+
+button {
+	padding:13px;
+}
+
+
+button:hover, .bio a:hover {
 	border-color: var(--accent-color);
 	background: var(--accent-color); 
 	transition: all 0.3s;
@@ -297,7 +306,7 @@ a, a:visited {
 	max-width:375px;
 }
 
-@media only screen and (max-width: 775px) {	
+@media only screen and (max-width: 900px) {	
 	.card-container {
 		width:90%;
 	}
@@ -365,7 +374,6 @@ a, a:visited {
 	
 	.nav-bar {
 		justify-content: flex-start;
-		padding: 0 25px 0 25px;
 	}
 	
 	.container {
