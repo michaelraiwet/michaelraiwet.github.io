@@ -28,7 +28,6 @@ body {
 	position: absolute; 
 	bottom:0;
 	margin: 0 0 40px 0;
-	background:beige;
 }
 
 .header {
@@ -189,7 +188,7 @@ a, a:visited {
 	font-size:0.9rem;
 	height:10px;
 	transition: all 0.3s;
-	color: rgba(0, 0, 0, 0.55);
+	color: rgba(0, 0, 0, 0.65);
 }
 
 .bio a:hover {
@@ -223,7 +222,6 @@ a, a:visited {
 
 .footer i {
 	font-size: 1.6rem;
-	padding:0 1.2rem;
 	transition: all 0.6s;
 }
 
@@ -257,7 +255,10 @@ a, a:visited {
 
 .footer-item {
 	display:flex;
-	justify-content: space-evenly;
+}
+
+.footer-icons {
+	gap:2.4rem;
 }
 
 
@@ -324,12 +325,7 @@ a, a:visited {
 	
 	.container {
 		padding-bottom:0px;
-	}
-	
-	body {
-		padding-bottom: 80px;
-	}
-	
+	}	
 	
 }
 
@@ -339,8 +335,9 @@ a, a:visited {
 		padding: 0 25px 0 25px;
 	}
 	
-	.containter {
-		margin: 0;
+	.container {
+		margin-bottom: 10px;
+		background:red;
 	}
 }
 
@@ -353,14 +350,19 @@ a, a:visited {
 		font-size:1.4rem;
 	}
 	
-	.nav-bar {
-		justify-content: flex-start;
-		padding: 0 25px 0 25px;
-	}
-	
 	.name {
 		font-size: 1.8rem;
 		line-height: 1.8rem;
+	}
+	
+	.footer-icons {
+		gap:0;
+		justify-content: space-evenly;
+		width:75%;
+	}
+	
+	.footer-text {
+		text-align: center;
 	}
 }
 
