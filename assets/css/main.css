@@ -89,6 +89,7 @@ body {
 	width: 0;
 	height:0;
 	background: transparent; 
+	display: none;
 }
 
 .social i {
@@ -104,6 +105,9 @@ body {
 	margin-bottom:3rem;
 	user-select: none;
 	-webkit-user-select: none;
+	scroll-behavior: smooth;
+	scrollbar-width: none;
+	-ms-overflow-style: -ms-autohiding-scrollbar; 
 }
 
 .nav-bar {
