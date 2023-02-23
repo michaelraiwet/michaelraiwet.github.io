@@ -315,7 +315,7 @@ button:hover, .bio a:hover {
 	max-width:375px;
 }
 
-@media only screen and (max-width: 900px) {	
+@media only screen and (max-width: 725px) {	
 	.card-container {
 		width:90%;
 	}
