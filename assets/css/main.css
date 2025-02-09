@@ -361,7 +361,8 @@ button:hover, .bio a:hover {
 	}
 	
 	.social {
-		gap:0;
+		gap: 0;
+		max-width: 400px; /* defaults to 450px if this line is missing; any less than six social icons is best to reduce max-width from default */
 	}
 	
 	.content-item {
@@ -371,10 +372,12 @@ button:hover, .bio a:hover {
 	.byline {
 		text-align: center;
 	}
+
 	.social .flex-item {
 		padding-right:0;
-		justify-content: space-evenly;
-		width:90%;
+		/* justify-content: space-evenly; */
+		justify-content: space-around;
+		width:100%;
 	}
 	
 	.container {
